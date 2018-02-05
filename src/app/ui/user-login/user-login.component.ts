@@ -22,12 +22,12 @@ export class UserLoginComponent {
     .then(() => this.afterSignIn());
   }
 
-  signInWithGoogle() {
+  signInWithGoogle(): void {
     this.auth.googleLogin()
       .then(() => this.afterSignIn());
   }
 
-  signInWithFacebook() {
+  signInWithFacebook(): void {
     this.auth.facebookLogin()
       .then(() => this.afterSignIn());
   }
